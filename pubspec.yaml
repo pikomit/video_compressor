@@ -1,0 +1,25 @@
+name: video_compressor
+description: Compress & Format videos (mp4)
+version: 1.0.0
+repository: https://github.com/pikomit/video_compressor
+homepage: https://github.com/pikomit/video_compressor#readme
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: fr.supernovae.pikomit.video_compressor
+        pluginClass: VideoCompressorPlugin
+      ios:
+        pluginClass: VideoCompressorPlugin
